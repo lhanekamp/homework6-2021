@@ -31,6 +31,16 @@ div .card header {
     border-top-left-radius: 7px;
 }
 
+div .card_big header {
+    background-color: #288088;
+    border: solid 2px #45ADAD;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+}
+
+
 .pricing {
     display: flex;
     flex-flow: row wrap;
