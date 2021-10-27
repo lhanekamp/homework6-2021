@@ -1,5 +1,5 @@
 body{
-    font-family: 'Alegreya Sans SC', sans-serif;
+    font-family: 'Alegreya Sans SC', serif;
     background-image: url(../images/concrete_seamless.png);
     background-color: #f1f1f1;
     
@@ -21,17 +21,14 @@ body{
   a:visited {
     color: blue;
 }
-header {
-    width: 100%;
-}
-header h3 {
+
+div .card header {
     background-color: #288088;
-    border: #45ADAD solid 2px;
+    border: solid 2px #45ADAD;
     padding-top: 20px;
     padding-bottom: 20px;
     border-top-right-radius: 7px;
     border-top-left-radius: 7px;
-    width: 100%;
 }
 
 .pricing {
@@ -43,8 +40,11 @@ header h3 {
 }
 
 .card {
-    flex-basis: 450px;
+   flex-basis: 450px;
 }
+.card_big {
+    flex-basis: 450px;
+ }
 
 
 
@@ -87,6 +87,7 @@ header h3 {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
+        position: -webkit-sticky;
         position: sticky;
         top: 0;
 
@@ -96,13 +97,17 @@ header h3 {
         flex-basis: 250px;
     }
 
-    .card header {
+    .card_big {
+        flex-basis: 250px;
+    }
+
+    div .card header {
         position: static;
     }
-    .card h3 {
-        text-align: left;
+
+    div .card_big header {
+        position: static;
     }
-   
     
    
 
