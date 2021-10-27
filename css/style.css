@@ -97,9 +97,9 @@ div .card_big header {
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        position: -webkit-sticky;
         position: sticky;
         top: 0;
+        width: 100%;
 
     }
   
